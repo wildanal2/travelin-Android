@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginVertical="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemberitahuan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="Maximum pembelian tiket 9 Pax untuk setiap kali Transaksi"/>
+
+</LinearLayout>

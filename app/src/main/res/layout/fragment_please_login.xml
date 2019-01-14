@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6EAED"
+    tools:context=".Fragment.PleaseLoginFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSeacrh"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="#FFF"
+        android:background="@color/colorPrimary"/>
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Untuk menggunakan fitur ini pastikan anda telah Masuk."
+             />
+        <TextView
+            android:id="@+id/btn_masuk"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

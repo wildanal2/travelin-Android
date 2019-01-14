@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6EAED"
+    tools:context=".Fragment.Transaksi.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="#FFF"
+        app:title="Detail Transaksi"
+        app:subtitleTextColor="#FFF"
+        android:background="@color/colorPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/img_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_bayar"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_shape_pilih"
+            android:textColor="#FFF"
+            android:text="Bayar"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

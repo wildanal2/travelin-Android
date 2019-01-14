@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6EAED"
+    tools:context=".Fragment.Tiket.MetodePembayaranFragment">
+
+    <LinearLayout
+        android:id="@+id/atop"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/a"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"/>
+                <TextView
+                    android:layout_below="@id/a"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/b"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"/>
+                <TextView
+                    android:layout_below="@id/b"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/c"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_tiga"/>
+                <TextView
+                    android:layout_below="@id/c"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bayar"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/atop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--scure ssl-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_roundscure"
+                android:layout_height="50dp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="13dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaksi Anda dilindungi oleh SSL Secured."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Worries anda aman!"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_scure_green"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--end scure ssl-->
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginVertical="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih metode pembayaran"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Bayar di Minimarket (Alfamart)"/>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/logo_alfamart"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E6EAED"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perlu Diketahui:"/>
+                <LinearLayout
+                    android:layout_marginLeft="17dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:src="@drawable/ic_dot"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pembayaran di Minimarket dapat menggunakan Tunai maupun Non Tunai."/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginVertical="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi pesanan"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#DCD3AE">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Jumlah yang harus dibayarkan"/>
+                    <TextView
+                        android:id="@+id/tv_totharga"
+                        android:layout_marginLeft="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Rp "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_namatiket"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pantai Goa Cina - Tiket Masuk"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_hargasatuan"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" @Rp 9.700"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_jumlahtiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga (4 Tickets)" />
+                    <TextView
+                        android:id="@+id/tv_subtotaltiket"
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 38.800" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_ketlayanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biaya Layanan" />
+                    <TextView
+                        android:id="@+id/tv_hargalayanan"
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 2.500" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travelin fee" />
+                    <TextView
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 0" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pajak" />
+                    <TextView
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Termasuk" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="#E6EAED"/>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Harga"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_hargatotal2"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 38.000"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_bayar"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginVertical="13dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/btn_shape_pilih"
+                android:textColor="#FFF"
+                android:text="Bayar Melalui Alfamart"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

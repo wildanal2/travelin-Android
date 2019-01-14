@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@color/colorWhite"
+    app:corner_radius="10dp">
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_kasir_happy"/>
+
+        <TextView
+            android:id="@+id/tv_h1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img"
+            android:text="Untuk melanjutkan Transaksi, silahkan masuk dulu"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/lay"
+        android:id="@+id/btn_ya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="masuk"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_roundkodekasir"/>
+
+
+</com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>

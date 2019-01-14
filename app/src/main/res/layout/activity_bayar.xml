@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".BayarActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="#FFF"
+        app:subtitleTextColor="#FFF"
+        android:background="@color/colorPrimary"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="Segera selesaikan pembayaran Anda sebelum kehabisan tiket"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_roundkodekasir">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:background="#E6EAED"
+                    app:corner_radius="5dp"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <FrameLayout
+                        android:id="@+id/container_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </FrameLayout>
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6EAED"/>
+            <LinearLayout
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/logo_kasir"/>
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode Pembayaran"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tv_kodepembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6EAED"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tunjukkan kode pembayaran ke kasir dan lakukan pembayaran senilai :"/>
+                <TextView
+                    android:id="@+id/tv_totalbayar"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#F16F00"/>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat detail Pembayaran"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <View
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6EAED"/>
+
+            <Button
+                android:id="@+id/btn_bayar"
+                android:visibility="gone"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginVertical="13dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/btn_shape_pilih"
+                android:textColor="#FFF"
+                android:text="Bayar"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

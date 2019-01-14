@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.Transaksi.CountdownTimeFragment">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEGERA LAKUKAN PEMBAYARAN DALAM WAKTU"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=" Jam "/>
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 00"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=" Menit "/>
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 00"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=" Detik"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_kettimeout"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Sebelum Rabu, 2 Januari 2019, 01:57 WIB)"/>
+
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>

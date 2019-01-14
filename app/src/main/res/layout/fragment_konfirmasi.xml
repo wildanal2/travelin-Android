@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6EAED"
+    tools:context=".Fragment.Tiket.KonfirmasiFragment">
+
+    <LinearLayout
+        android:id="@+id/atop"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/a"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"/>
+                <TextView
+                    android:layout_below="@id/a"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/b"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_dua"/>
+                <TextView
+                    android:layout_below="@id/b"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/c"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_tiga_no"/>
+                <TextView
+                    android:layout_below="@id/c"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bayar"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/atop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pesanan Anda"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:corner_radius="4dp"
+                android:background="@drawable/bg_tiket">
+                <TextView
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiket"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="top"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_ticket_fill"/>
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_namatiket1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Standart" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_date"/>
+                    <TextView
+                        android:id="@+id/tv_tanggaltiket"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_person"/>
+                    <TextView
+                        android:id="@+id/tv_person"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 orang" />
+                </LinearLayout>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rincian Harga"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                app:corner_radius="4dp"
+                android:background="@drawable/bg_tiket2">
+                <TextView
+                    android:id="@+id/tv_namatiket2"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pantai Goa Cina - Tiket Masuk"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_hargasatuan"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" @Rp "
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_jumlahtiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga ( Tickets)" />
+                    <TextView
+                        android:id="@+id/tv_subtotaltiket"
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp " />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travelin fee" />
+                    <TextView
+                        android:layout_marginLeft="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 0" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="#E6EAED"/>
+                <RelativeLayout
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Harga"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_hargakeseluruhan"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp "
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan menekan tombol "
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjut"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#c25a4c"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", saya setuju dengan "
+                    android:textSize="13sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kebijakan Privasi"
+                    android:textStyle="bold"
+                    android:textColor="#c25a4c"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" dan "
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ketentuan Penggunaan"
+                    android:textColor="#c25a4c"
+                    android:textStyle="bold"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Travelin"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_lanjutkan"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginVertical="13dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/btn_shape_pilih"
+                android:textColor="#FFF"
+                android:text="  Lanjutkan  "
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

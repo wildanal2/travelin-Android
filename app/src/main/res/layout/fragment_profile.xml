@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAED">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBackgroundProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bgmalang" />
+
+
+                <ImageView
+                    android:id="@+id/imageProfil"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/profileicon"
+                    android:layout_marginTop="85dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" "
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Akun"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                app:corner_radius="4dp"
+                android:background="@color/colorWhite">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama :  "
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="#E6EAED"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email :  "
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="#E6EAED"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Hp :  "
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tv_nohp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#E6EAED"/>
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaksi Tiket"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                app:corner_radius="4dp"
+                android:background="@color/colorWhite">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:weightSum="4">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_kasir"/>
+                        <TextView
+                            android:id="@+id/tvtottrans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                        <TextView
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Transaksi"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_kasir_sukses"/>
+                        <TextView
+                            android:id="@+id/tv_totberhasil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transaksi berhasil"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_kasir_menunggu"/>
+                        <TextView
+                            android:id="@+id/tv_waiting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menunggu Pembayaran"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_kasir_batal"/>
+                        <TextView
+                            android:id="@+id/tv_totbatal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transaksi di Batalkan"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="#E6EAED"/>
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bantuan"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/btn_bantuan"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                app:corner_radius="4dp"
+                android:background="@color/colorWhite">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pusat Bantuan"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat solusi terbaik atau hubungi kami"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="#E6EAED"/>
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <!--<Button-->
+                <!--android:id="@+id/btnKeluar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/btn_shape1"-->
+                <!--android:text="Keluar"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="8pt"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/btnEdit"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--/>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

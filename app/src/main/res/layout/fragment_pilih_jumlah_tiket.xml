@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAED"
+    tools:context=".Fragment.Tiket.PilihJumlahTiketFragment">
+
+    <LinearLayout
+        android:id="@+id/containertop"
+        android:orientation="vertical"
+        android:layout_marginVertical="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_namatiket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:text="DINOPARK - Tiket Masuk - Premium"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="#E6EAED" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="7">
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_paperless"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="Instant, Paperless"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_norefund"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="Tidak Bisa Refund"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_redeem"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="Dapat di-redeem pada tanggal kunjungan yang dipilih"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hargaawal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 13.500"
+                    android:textAlignment="textEnd"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_hargadiskon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 11.000"
+                    android:textColor="#FB8B34"
+                    android:textAlignment="textEnd"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="13dp"
+            android:text="Lihat Detail"
+            android:textColor="@color/colorBlue"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/containertop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pax (85 cm ke atas)"/>
+            <TextView
+                android:id="@+id/tv_hargapak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 66.500"/>
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/enb_jumlah"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            app:backGroundColor="#E6EAED"
+            app:textColor="@color/colorBlue"
+            app:textSize="8sp"
+            app:finalNumber="10">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:background="#f5f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_totalstrike"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="Rp 0"
+                        android:textSize="11sp"/>
+                    <TextView
+                        android:id="@+id/tv_hargatotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textColor="#FB8B34"
+                        android:text="Rp 0"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="Termasuk pajak"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_lanjutkan"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape_pilih"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFF"
+                android:text="Lanjutkan"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

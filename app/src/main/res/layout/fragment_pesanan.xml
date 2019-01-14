@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAED"
+    tools:context=".Fragment.Transaksi.PesananFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSeacrh"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container_pesanan"
+        android:layout_below="@id/toolbarSeacrh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_transaksi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        app:SpinKit_Color="@color/colorPrimary" />
+
+
+</RelativeLayout>

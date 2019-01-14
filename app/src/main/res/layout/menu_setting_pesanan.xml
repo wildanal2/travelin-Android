@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="265dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_h1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Berdasarkan"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <View
+        android:id="@+id/sparator1"
+        android:layout_below="@+id/tv_h1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6EAED"/>
+
+    <RadioGroup
+        android:id="@+id/radio_groupberdasarkan"
+        android:layout_below="@+id/sparator1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semua Transaksi"
+            android:textSize="16sp"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimary"/>
+        <RadioButton
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Berhasil"
+            android:textSize="16sp"
+            android:enabled="false"/>
+        <RadioButton
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menunggu Pembayaran"
+            android:textSize="16sp"
+            android:enabled="false"/>
+        <RadioButton
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaksi di Batalkan"
+            android:textSize="16sp"
+            android:enabled="false"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_below="@+id/radio_groupberdasarkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="3dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="20dp"
+        android:background="#ecefeb"
+        android:textSize="17sp"
+        android:text="Menu Sedang Dalam Perbaikan"
+        />
+
+
+
+
+
+</RelativeLayout>

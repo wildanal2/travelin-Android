@@ -1,5 +1,6 @@
 package com.example.android.ayodolen.Fragment.Transaksi;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -63,6 +64,12 @@ public class DetailActivity extends AppCompatActivity {
 
 
     private void loadData() {
+        final Dialog loadd = new Dialog(DetailActivity.this,android.R.style.Theme_Black_NoTitleBar_Fullscreen);
+        loadd.setContentView(R.layout.item_loading_null);
+        loadd.setCancelable(false);
+        loadd.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        loadd.show();
+
         Call<PembayaranResponse> p = mApi.pembayaranbyid(i.getStringExtra("id"));
         p.enqueue(new Callback<PembayaranResponse>() {
             @Override
@@ -89,12 +96,12 @@ public class DetailActivity extends AppCompatActivity {
                     if (getApplicationContext()!=null) getSupportFragmentManager().beginTransaction().replace(R.id.container_detail, new TimeoutFragment()).commit();
                 }
                 tvStatus.setCompoundDrawables(null,null,null,null);
-
+                loadd.dismiss();
             }
 
             @Override
             public void onFailure(Call<PembayaranResponse> call, Throwable t) {
-                if (getApplicationContext()!=null) Toast.makeText(getApplicationContext(), ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (getApplicationContext()!=null) Toast.makeText(getApplicationContext(), ""+t.getMessage(), Toast.LENGTH_SHORT).show(); loadd.dismiss();
             }
         });
     }
